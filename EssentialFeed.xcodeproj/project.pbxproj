@@ -102,9 +102,17 @@
 		FD0C393D2996146E0095BEEA /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD0C393E2996146E0095BEEA /* RemoteFeedLoaderTests.swift */,
+				FD13107329A8909E0021EE97 /* Feed API */,
 			);
 			path = EssentialFeedTests;
+			sourceTree = "<group>";
+		};
+		FD13107329A8909E0021EE97 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C393E2996146E0095BEEA /* RemoteFeedLoaderTests.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 		FDBB2EDA2997C59D00E49232 /* Feed Feature */ = {
