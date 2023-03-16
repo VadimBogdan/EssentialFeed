@@ -102,7 +102,7 @@ Then the app should display an error message
 6. System delivers success message.
 
 ### Deleting error course (sad path):
-1. System devliers error.
+1. System delivers error.
 
 ### Saving error course (sad path):
 1. System delivers error.
