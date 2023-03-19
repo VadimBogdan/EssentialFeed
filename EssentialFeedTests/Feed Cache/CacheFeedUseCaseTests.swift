@@ -137,10 +137,10 @@ final class CacheFeedUseCaseTests: XCTestCase {
             exp.fulfill()
         }
         store.completeDeletionSuccessfully()
-        store.completeInsertionSuccessfully()
+        store.completeInsertion(with: insertionError)
         wait(for: [exp], timeout: 1.0)
         
-        XCTAssertNil(receivedError)
+        XCTAssertEqual(receivedError as? NSError, insertionError)
     }
     
     func test_save_succeedsOnSuccessfulCacheInsertion() {
@@ -155,10 +155,10 @@ final class CacheFeedUseCaseTests: XCTestCase {
             exp.fulfill()
         }
         store.completeDeletionSuccessfully()
-        store.completeInsertion(with: insertionError)
+        store.completeInsertionSuccessfully()
         wait(for: [exp], timeout: 1.0)
         
-        XCTAssertEqual(receivedError as? NSError, insertionError)
+        XCTAssertNil(receivedError)
     }
     
     // MARK: - Helpers
