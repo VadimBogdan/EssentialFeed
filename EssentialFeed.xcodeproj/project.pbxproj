@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD040F4B29C9461400D8422D /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD040F4A29C9461400D8422D /* LocalFeedLoader.swift */; };
 		FD04A21129AC6F010070DD9F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04A21029AC6F010070DD9F /* XCTestCase+MemoryLeakTracking.swift */; };
 		FD04A21329AC7DB60070DD9F /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04A21229AC7DB60070DD9F /* URLSessionHTTPClient.swift */; };
 		FD081854299CDD7B0032F78F /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD081853299CDD7B0032F78F /* RemoteFeedLoader.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD040F4A29C9461400D8422D /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		FD04A21029AC6F010070DD9F /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		FD04A21229AC7DB60070DD9F /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		FD081853299CDD7B0032F78F /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD040F4929C945FF00D8422D /* Feed Cache */ = {
+			isa = PBXGroup;
+			children = (
+				FD040F4A29C9461400D8422D /* LocalFeedLoader.swift */,
+			);
+			path = "Feed Cache";
+			sourceTree = "<group>";
+		};
 		FD04A20F29AC6EDB0070DD9F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		FD0C39312996146E0095BEEA /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				FD040F4929C945FF00D8422D /* Feed Cache */,
 				FD081852299CDD620032F78F /* Feed API */,
 				FD0C39322996146E0095BEEA /* EssentialFeed.h */,
 				FD0C39332996146E0095BEEA /* EssentialFeed.docc */,
@@ -326,6 +337,7 @@
 				FDBB2ED92997C56000E49232 /* FeedLoader.swift in Sources */,
 				FD13107229A889E30021EE97 /* FeedItemsMapper.swift in Sources */,
 				FDBB2ED72997C52C00E49232 /* FeedItem.swift in Sources */,
+				FD040F4B29C9461400D8422D /* LocalFeedLoader.swift in Sources */,
 				FD0C39342996146E0095BEEA /* EssentialFeed.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
