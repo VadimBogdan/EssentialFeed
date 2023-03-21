@@ -25,6 +25,7 @@
 		FDD8B15729ADFEC5005CF1A5 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD8B15629ADFEC5005CF1A5 /* EssentialFeedAPIEndToEndTests.swift */; };
 		FDD8B15829ADFEC5005CF1A5 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0C392F2996146E0095BEEA /* EssentialFeed.framework */; };
 		FDE437F629AB6416002BC77B /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE437F529AB6416002BC77B /* URLSessionHTTPClientTests.swift */; };
+		FDFA437F29C9CE1C009F92C6 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA437E29C9CE1C009F92C6 /* RemoteFeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FDD8B15429ADFEC5005CF1A5 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD8B15629ADFEC5005CF1A5 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		FDE437F529AB6416002BC77B /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		FDFA437E29C9CE1C009F92C6 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		FD081852299CDD620032F78F /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
+				FDFA437E29C9CE1C009F92C6 /* RemoteFeedItem.swift */,
 				FD081853299CDD7B0032F78F /* RemoteFeedLoader.swift */,
 				FD13107129A889E30021EE97 /* FeedItemsMapper.swift */,
 				FD13106F29A889710021EE97 /* HTTPClient.swift */,
@@ -144,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				FD040F4929C945FF00D8422D /* Feed Cache */,
-				FD081852299CDD620032F78F /* Feed API */,
 				FDBB2EDA2997C59D00E49232 /* Feed Feature */,
 				FD0C39322996146E0095BEEA /* EssentialFeed.h */,
 				FD0C39332996146E0095BEEA /* EssentialFeed.docc */,
@@ -340,6 +342,7 @@
 				FD13107029A889710021EE97 /* HTTPClient.swift in Sources */,
 				FDBB2ED92997C56000E49232 /* FeedLoader.swift in Sources */,
 				FD13107229A889E30021EE97 /* FeedItemsMapper.swift in Sources */,
+				FDFA437F29C9CE1C009F92C6 /* RemoteFeedItem.swift in Sources */,
 				FDBB2ED72997C52C00E49232 /* FeedItem.swift in Sources */,
 				FD040F4B29C9461400D8422D /* LocalFeedLoader.swift in Sources */,
 				FD0C39342996146E0095BEEA /* EssentialFeed.docc in Sources */,
