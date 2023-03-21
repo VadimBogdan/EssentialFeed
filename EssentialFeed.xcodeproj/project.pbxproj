@@ -148,6 +148,7 @@
 			children = (
 				FD040F4929C945FF00D8422D /* Feed Cache */,
 				FDBB2EDA2997C59D00E49232 /* Feed Feature */,
+				FD081852299CDD620032F78F /* Feed API */,
 				FD0C39322996146E0095BEEA /* EssentialFeed.h */,
 				FD0C39332996146E0095BEEA /* EssentialFeed.docc */,
 			);
