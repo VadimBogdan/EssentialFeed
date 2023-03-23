@@ -105,7 +105,7 @@ final class LoadFeedFromCacheUseCaseTests: XCTestCase {
 
 private extension Date {
     func adding(days: Int) -> Date {
-        return Calendar(identifier: .gregorian).date(byAdding: .day, value: 7, to: self)!
+        return Calendar(identifier: .gregorian).date(byAdding: .day, value: days, to: self)!
     }
     
     func adding(seconds: TimeInterval) -> Date {
