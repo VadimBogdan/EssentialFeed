@@ -152,7 +152,7 @@ final class CodableFeedStoreTests: XCTestCase {
         let sut = makeSUT()
         insert((uniqueImageFeed().local, Date()), to: sut)
         
-        let deletionError = deleteCache(from: sut)
+        deleteCache(from: sut)
         
         expect(sut, toRetrieve: .empty)
     }
