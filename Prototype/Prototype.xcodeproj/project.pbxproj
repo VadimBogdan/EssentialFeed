@@ -12,6 +12,7 @@
 		FDB8E86A29E90DAE00323971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB8E86829E90DAE00323971 /* Main.storyboard */; };
 		FDB8E86C29E90DB200323971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB8E86B29E90DB200323971 /* Assets.xcassets */; };
 		FDB8E86F29E90DB200323971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB8E86D29E90DB200323971 /* LaunchScreen.storyboard */; };
+		FDB8E87729E927D400323971 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8E87629E927D400323971 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FDB8E86B29E90DB200323971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB8E86E29E90DB200323971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB8E87029E90DB200323971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB8E87629E927D400323971 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB8E86229E90DAE00323971 /* AppDelegate.swift */,
+				FDB8E87629E927D400323971 /* FeedViewController.swift */,
 				FDB8E86429E90DAE00323971 /* SceneDelegate.swift */,
 				FDB8E86829E90DAE00323971 /* Main.storyboard */,
 				FDB8E86B29E90DB200323971 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB8E86329E90DAE00323971 /* AppDelegate.swift in Sources */,
+				FDB8E87729E927D400323971 /* FeedViewController.swift in Sources */,
 				FDB8E86529E90DAE00323971 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
