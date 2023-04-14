@@ -14,6 +14,7 @@
 		FDB8E86F29E90DB200323971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB8E86D29E90DB200323971 /* LaunchScreen.storyboard */; };
 		FDB8E87729E927D400323971 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8E87629E927D400323971 /* FeedViewController.swift */; };
 		FDB8E87929E929C400323971 /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8E87829E929C400323971 /* FeedImageViewModel+PrototypeData.swift */; };
+		FDB8E87B29E92A5600323971 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8E87A29E92A5600323971 /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FDB8E87029E90DB200323971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB8E87629E927D400323971 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FDB8E87829E929C400323971 /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		FDB8E87A29E92A5600323971 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				FDB8E86229E90DAE00323971 /* AppDelegate.swift */,
 				FDB8E87629E927D400323971 /* FeedViewController.swift */,
+				FDB8E87A29E92A5600323971 /* FeedImageCell.swift */,
+				FDB8E87829E929C400323971 /* FeedImageViewModel+PrototypeData.swift */,
 				FDB8E86429E90DAE00323971 /* SceneDelegate.swift */,
 				FDB8E86829E90DAE00323971 /* Main.storyboard */,
 				FDB8E86B29E90DB200323971 /* Assets.xcassets */,
 				FDB8E86D29E90DB200323971 /* LaunchScreen.storyboard */,
 				FDB8E87029E90DB200323971 /* Info.plist */,
-				FDB8E87829E929C400323971 /* FeedImageViewModel+PrototypeData.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				FDB8E87729E927D400323971 /* FeedViewController.swift in Sources */,
 				FDB8E86529E90DAE00323971 /* SceneDelegate.swift in Sources */,
 				FDB8E87929E929C400323971 /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				FDB8E87B29E92A5600323971 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
