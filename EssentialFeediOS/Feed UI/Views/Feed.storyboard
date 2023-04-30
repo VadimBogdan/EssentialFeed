@@ -123,6 +123,7 @@ Location</string>
                         <connections>
                             <outlet property="dataSource" destination="ZIL-7k-xV4" id="CkS-LQ-fPq"/>
                             <outlet property="delegate" destination="ZIL-7k-xV4" id="23H-1r-JsW"/>
+                            <outlet property="prefetchDataSource" destination="ZIL-7k-xV4" id="Kay-UE-B5c"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Feed" id="tw6-Ar-gMV"/>
