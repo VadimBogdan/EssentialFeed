@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Feed-->
+        <!--Feed View Controller-->
         <scene sceneID="rqB-RX-IYl">
             <objects>
-                <tableViewController id="ZIL-7k-xV4" customClass="FeedViewController" customModule="EssentialFeediOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ZIL-7k-xV4" userLabel="Feed View Controller" customClass="FeedViewController" customModule="EssentialFeediOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="X2X-SX-s7k">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +77,9 @@ Location</string>
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="Ju3-a4-4cM" eventType="touchUpInside" id="0VJ-KE-CJB"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,6 +121,13 @@ Location</string>
                                         <constraint firstAttribute="bottomMargin" secondItem="4SK-NF-qTc" secondAttribute="bottom" priority="999" constant="6" id="WmY-3j-Dxw"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="EbU-Uh-ASn" id="Ujv-iy-vdm"/>
+                                    <outlet property="feedImageContainer" destination="add-h4-4fN" id="BzV-Bv-G0c"/>
+                                    <outlet property="feedImageView" destination="PgG-Tt-8Mc" id="4TS-uJ-LPm"/>
+                                    <outlet property="locationContainer" destination="9eC-PB-FL1" id="2uK-bq-xiS"/>
+                                    <outlet property="locationLabel" destination="y13-cZ-QKH" id="Aif-V5-UBc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
