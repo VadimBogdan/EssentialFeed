@@ -124,10 +124,6 @@ Then the app should display an error message
 
 ![Feed Loading Feature](feed_flowchart.png)
 
-## Architecture
-
-![Feed Loading Feature](feed_architecture.png)
-
 ## Model Specs
 
 ### Feed Image
@@ -172,3 +168,7 @@ GET *url* (TBD)
     ]
 }
 ```
+
+## Architecture
+
+![Feed Loading Feature](architecture.png)
