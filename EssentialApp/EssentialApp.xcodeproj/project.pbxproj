@@ -23,6 +23,7 @@
 		FD8E90EF2A26592A0002EA25 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E90EC2A26592A0002EA25 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD8E90F02A26592A0002EA25 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E90ED2A26592A0002EA25 /* EssentialFeediOS.framework */; };
 		FD8E90F12A26592A0002EA25 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E90ED2A26592A0002EA25 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDF66F952A2A40C40029DEBA /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF66F942A2A40C40029DEBA /* FeedLoaderCacheDecoratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		FD16BD042A275D9A00FD223F /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		FD8E90EC2A26592A0002EA25 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8E90ED2A26592A0002EA25 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF66F942A2A40C40029DEBA /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				FD16BD012A275D2600FD223F /* Helpers */,
 				FD16BCF92A27527400FD223F /* FeedLoaderWithFallbackCompositeTests.swift */,
 				FD16BCFD2A27587700FD223F /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
+				FDF66F942A2A40C40029DEBA /* FeedLoaderCacheDecoratorTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD16BD052A275D9A00FD223F /* SharedTestHelpers.swift in Sources */,
+				FDF66F952A2A40C40029DEBA /* FeedLoaderCacheDecoratorTests.swift in Sources */,
 				FD16BCFE2A27587700FD223F /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				FD16BCFA2A27527400FD223F /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				FD16BD032A275D3C00FD223F /* XCTestCase+MemoryLeakTracking.swift in Sources */,
