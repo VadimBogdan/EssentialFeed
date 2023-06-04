@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZIL-7k-xV4">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -90,6 +90,9 @@ Location</string>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgG-Tt-8Mc">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="feed-image-view"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41Y-xn-wsI">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
@@ -142,6 +145,9 @@ Location</string>
                                         <constraint firstAttribute="bottomMargin" secondItem="4SK-NF-qTc" secondAttribute="bottom" priority="999" constant="6" id="WmY-3j-Dxw"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="feed-image-cell"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="EbU-Uh-ASn" id="Ujv-iy-vdm"/>
                                     <outlet property="feedImageContainer" destination="add-h4-4fN" id="BzV-Bv-G0c"/>
