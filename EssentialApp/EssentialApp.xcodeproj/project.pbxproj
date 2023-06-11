@@ -191,11 +191,11 @@
 				FD16BD012A275D2600FD223F /* Helpers */,
 				FD7015332A35EA0600DDF1D5 /* SceneDelegateTests.swift */,
 				FD7015532A35F2A200DDF1D5 /* FeedUIIntegrationTests.swift */,
+				FD7015552A35F5C700DDF1D5 /* FeedAcceptanceTests.swift */,
 				FD16BCF92A27527400FD223F /* FeedLoaderWithFallbackCompositeTests.swift */,
 				FD16BCFD2A27587700FD223F /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				FDF66F942A2A40C40029DEBA /* FeedLoaderCacheDecoratorTests.swift */,
 				FD1422862A2B3E540016761F /* FeedImageDataLoaderCacheDecoratorTests.swift */,
-				FD7015552A35F5C700DDF1D5 /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
