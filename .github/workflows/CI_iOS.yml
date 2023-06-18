@@ -21,18 +21,24 @@ jobs:
           run: sudo xcode-select -switch /Applications/Xcode_14.3.1.app
           
         - name: Build and test
-          run: xcodebuild clean build test -workspace EssentialApp/EssentialApp.xcworkspace -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.4" ONLY_ACTIVE_ARCH=YES
+          run: xcodebuild clean build test -workspace EssentialApp/EssentialApp.xcworkspace -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.4" ONLY_ACTIVE_ARCH=YES 2> /dev/null
 
-    job_2:
-       if: ${{ always() }}
-       needs: job_1
-       
-       runs-on: macos-13
-       
-       steps:
         - name: Cache
           id: cache
           uses: actions/cache@v3
           with:
-            path: Users/runner/Library/Developer/CoreSimulator/Devices
+            path: /Users/runner/Library/Developer/CoreSimulator/Devices/
             key: cache1
+#     job_2:
+#        if: ${{ always() }}
+#        needs: job_1
+       
+#        runs-on: macos-13
+       
+#        steps:
+#         - name: Cache
+#           id: cache
+#           uses: actions/cache@v3
+#           with:
+#             path: /Users/runner/Library/Developer/CoreSimulator/Devices/
+#             key: cache1
