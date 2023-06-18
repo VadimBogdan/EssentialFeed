@@ -10,28 +10,29 @@ on:
     branches: [ "master" ]
 
 jobs:
-  job_1:
-    runs-on: macos-13
-    continue-on-error: true
+  	job_1:
+    		runs-on: macos-13
+    		continue-on-error: true
 
-    steps:
-    - uses: actions/checkout@v3
+    		steps:
+    		- uses: actions/checkout@v3
     
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_14.3.1.app
+    		- name: Select Xcode
+      		run: sudo xcode-select -switch /Applications/Xcode_14.3.1.app
     
-    - name: Build and test
-      run: xcodebuild clean build test -workspace EssentialApp/EssentialApp.xcworkspace -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.4" ONLY_ACTIVE_ARCH=YES
-  job_2:
-    if: ${{ always() }}
-    needs: [build]
+    		- name: Build and test
+      		run: xcodebuild clean build test -workspace EssentialApp/EssentialApp.xcworkspace -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.4" ONLY_ACTIVE_ARCH=YES
+	
+	job_2:
+    		if: ${{ always() }}
+    		needs: job1
 
-    runs-on: macos-13
+    		runs-on: macos-13
 
-    - name: Cache
-      id: cache
-      uses: actions/cache@v3
-      with:
-        path: Users/runner/Library/Developer/CoreSimulator/Devices
-        key: cache1
+    		- name: Cache
+      		id: cache
+      		uses: actions/cache@v3
+      		with:
+        		path: Users/runner/Library/Developer/CoreSimulator/Devices
+        		key: cache1
 
