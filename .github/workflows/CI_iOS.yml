@@ -28,3 +28,11 @@ jobs:
        needs: job_1
        
        runs-on: macos-13
+       
+       steps:
+        - name: Cache
+          id: cache
+          uses: actions/cache@v3
+          with:
+            path: Users/runner/Library/Developer/CoreSimulator/Devices
+            key: cache1
