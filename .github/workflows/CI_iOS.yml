@@ -30,8 +30,7 @@ jobs:
       with:
         path: Users/runner/Library/Developer/CoreSimulator/Devices
         key: cache2
-      
-  job1:
+  cachejob:
     if: ${{ always() }}
     needs: [build]
     
