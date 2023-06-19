@@ -25,6 +25,7 @@ jobs:
 
 
         - name: Zip output
+          if: always()
           run: zip -qq -r snapshots.zip Devices
           working-directory: "/Users/runner/Library/Developer/CoreSimulator"
           
