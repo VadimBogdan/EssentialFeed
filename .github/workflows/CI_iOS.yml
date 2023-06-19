@@ -23,12 +23,17 @@ jobs:
         - name: Build and test
           run: xcodebuild clean build test -workspace EssentialApp/EssentialApp.xcworkspace -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14,OS=16.4" ONLY_ACTIVE_ARCH=YES
 
+
+        - name: Zip output
+          run: zip -qq -r snapshots.zip Devices
+          working-directory: "/Users/runner/Library/Developer/CoreSimulator"
+          
         - name: Upload Artifact
           if: always()
           uses: actions/upload-artifact@v3
           with:
             name: snapshots
-            path: "/Users/runner/Library/Developer/CoreSimulator/Devices"
+            path: "/Users/runner/Library/Developer/CoreSimulator/snapshots.zip"
             
 #     job_2:
 #        if: ${{ always() }}
