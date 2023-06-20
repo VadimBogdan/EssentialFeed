@@ -19,7 +19,7 @@ extension XCTestCase {
         }
         
         if snapshotData != storedSnapshotData {
-            let temporarySnapshotURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
+            let temporarySnapshotURL = URL(fileURLWithPath: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.absoluteString, isDirectory: true)
                 .appendingPathComponent(snapshotURL.lastPathComponent)
             
             try? snapshotData?.write(to: temporarySnapshotURL)
