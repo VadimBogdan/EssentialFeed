@@ -11,7 +11,7 @@ on:
 
 jobs:
     job_1:
-        runs-on: macos-13
+        runs-on: macos-13-xl
         continue-on-error: true
         
         steps:
