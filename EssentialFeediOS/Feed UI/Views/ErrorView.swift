@@ -5,6 +5,38 @@
 //  Created by Vadym Bohdan on 09.05.2023.
 //
 
+import SwiftUI
+
+class Score: ObservableObject {
+    @Published var points = 0
+}
+
+struct ScoreView: View {
+    @State private var score = Score()
+    let teamName: String
+    var body: some View {
+        Button("\(teamName): \(score.points)") { score.points += 1 }
+    }
+}
+
+struct BasketballGameView: View {
+    @State private var quarter = 1
+    var body: some View {
+        VStack {
+            if quarter <= 4 {
+                Button(quarter < 4 ? "Next Quarter" : "End Game") { quarter += 1 }
+                HStack {
+                    ScoreView(teamName: "Team A")
+                    ScoreView(teamName: "Team B")
+                }
+                Text("Quarter: \(quarter)")
+            } else {
+                Text("Game Ended")
+            }
+        }
+    }
+}
+
 import UIKit
 
 public final class ErrorView: UIView {
