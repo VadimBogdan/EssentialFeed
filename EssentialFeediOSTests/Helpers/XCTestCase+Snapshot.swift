@@ -48,11 +48,11 @@ extension XCTestCase {
         return URL(fileURLWithPath: String(describing: file))
             .deletingLastPathComponent()
             .appendingPathComponent("snapshots")
-            .appendingPathComponent("\(name).jpeg")
+            .appendingPathComponent("\(name).png")
     }
     
     private func makeSnapshotData(for snapshot: UIImage, file: StaticString, line: UInt) -> Data? {
-        guard let data = snapshot.jpegData(compressionQuality: 1.0) else {
+        guard let data = snapshot.pngData() else {
             XCTFail("Failed to generate PNG data representation from snapshot", file: file, line: line)
             return nil
         }
