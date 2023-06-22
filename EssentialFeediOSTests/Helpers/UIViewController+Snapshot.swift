@@ -32,7 +32,7 @@ struct SnapshotConfiguration {
                 .init(horizontalSizeClass: .compact),
                 .init(verticalSizeClass: .regular),
                 .init(displayScale: 2),
-                .init(displayGamut: .SRGB),
+                .init(displayGamut: .P3),
                 .init(userInterfaceStyle: style)
             ]))
     }
