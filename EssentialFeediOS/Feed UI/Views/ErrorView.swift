@@ -28,9 +28,7 @@ public final class ErrorView: UIView {
     
     private func setMessageAnimated(_ message: String?) {
         if let message = message {
-            label.text = message
-            self.alpha = 1
-//            showAnimated(message)
+            showAnimated(message)
         } else {
             hideMessageAnimated()
         }
