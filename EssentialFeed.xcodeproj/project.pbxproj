@@ -327,7 +327,6 @@
 			children = (
 				FD04A21029AC6F010070DD9F /* XCTestCase+MemoryLeakTracking.swift */,
 				FDF8800129CF19D700357228 /* SharedTestHelpers.swift */,
-				FDA169D82A113BFC00515DE7 /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -522,6 +521,7 @@
 		FDA16ACB2A641FAD00E712E6 /* Shared API Infra */ = {
 			isa = PBXGroup;
 			children = (
+				FDC8015D2A64474B00182D4A /* Helpers */,
 				FDE437F529AB6416002BC77B /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Shared API Infra";
@@ -571,6 +571,14 @@
 				FD14228C2A2B48890016761F /* FeedImageDataCache.swift */,
 			);
 			path = "Feed Feature";
+			sourceTree = "<group>";
+		};
+		FDC8015D2A64474B00182D4A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA169D82A113BFC00515DE7 /* URLProtocolStub.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FDD8B15529ADFEC5005CF1A5 /* EssentialFeedAPIEndToEndTests */ = {
