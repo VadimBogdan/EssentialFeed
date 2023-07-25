@@ -13,7 +13,8 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     
     private lazy var dataSource: UITableViewDiffableDataSource<Int, CellController> = {
         .init(tableView: tableView) { (tableView, index, controller) in
-            controller.dataSource.tableView(tableView, cellForRowAt: index)
+            print("id: ", controller.id, " \(String(describing: type(of: controller as? LoadMoreCellController)))")
+            return controller.dataSource.tableView(tableView, cellForRowAt: index)
         }
     }()
     
