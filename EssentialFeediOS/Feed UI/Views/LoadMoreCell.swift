@@ -51,7 +51,6 @@ public class LoadMoreCell: UITableViewCell {
             } else {
                 spinner.stopAnimating()
             }
-            print("isAnimating \(newValue), current: \(spinner.isAnimating)")
         }
     }
     
